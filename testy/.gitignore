@@ -1,0 +1,7 @@
+node_modules/
+*.json.out
+vysledek.json
+zaklad.json
+demo.html
+sablona/
+demo_web/

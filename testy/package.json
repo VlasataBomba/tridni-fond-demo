@@ -1,0 +1,7 @@
+{
+  "name": "tridni-fond-testy",
+  "private": true,
+  "description": "Testovací scénář aplikace Třídní fond v simulovaném prostředí Google (bez připojení k Googlu).",
+  "scripts": { "test": "node run.js .. vysledek.json" },
+  "devDependencies": { "jsqr": "^1.4.0", "pngjs": "^7.0.0" }
+}
