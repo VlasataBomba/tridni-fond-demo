@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Liberation Sans, DejaVu Sans, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5fd1"/>
+    </marker>
+    <marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5565"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="800" fill="#ffffff"/>
+
+  <text x="30" y="46" font-size="30" font-weight="700" fill="#1b2430">Třídní fond – jak to funguje</text>
+  <text x="30" y="76" font-size="16" fill="#4b5565">Všechno běží v Google účtu školy (Tabulky + Apps Script + Gmail). Autor aplikace k datům nemá přístup.</text>
+
+  <!-- hranice Google účtu školy -->
+  <rect x="285" y="105" width="650" height="440" rx="18" fill="#f5f8ff" stroke="#1f5fd1" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="305" y="132" font-size="15" font-weight="700" fill="#1f5fd1">GOOGLE ÚČET ŠKOLY – tady zůstávají všechna data</text>
+
+  <!-- Apps Script -->
+  <rect x="315" y="150" width="250" height="175" rx="12" fill="#ffffff" stroke="#1f5fd1" stroke-width="2"/>
+  <text x="335" y="178" font-size="19" font-weight="700" fill="#1b2430">Apps Script</text>
+  <text x="335" y="198" font-size="13" fill="#4b5565">„mozek“ aplikace</text>
+  <text x="335" y="226" font-size="14" fill="#1b2430">• práva podle role</text>
+  <text x="335" y="248" font-size="14" fill="#1b2430">• vlastní generátor QR kódů</text>
+  <text x="335" y="270" font-size="14" fill="#1b2430">• čte e-maily z banky</text>
+  <text x="335" y="292" font-size="14" fill="#1b2430">• páruje platby (VS + SS)</text>
+  <text x="335" y="314" font-size="14" fill="#1b2430">• nic neodešle bez potvrzení</text>
+
+  <!-- Tabulka -->
+  <rect x="665" y="150" width="250" height="175" rx="12" fill="#ffffff" stroke="#17803d" stroke-width="2"/>
+  <text x="685" y="178" font-size="19" font-weight="700" fill="#1b2430">Tabulka Google</text>
+  <text x="685" y="198" font-size="13" fill="#4b5565">databáze školy</text>
+  <text x="685" y="226" font-size="14" fill="#1b2430">• třídy a žáci</text>
+  <text x="685" y="248" font-size="14" fill="#1b2430">• sbírky a stavy plateb</text>
+  <text x="685" y="270" font-size="14" fill="#1b2430">• historie plateb</text>
+  <text x="685" y="292" font-size="14" fill="#1b2430">• odeslané e-maily</text>
+
+  <!-- Gmail -->
+  <rect x="440" y="380" width="340" height="140" rx="12" fill="#ffffff" stroke="#b3261e" stroke-width="2"/>
+  <text x="460" y="408" font-size="19" font-weight="700" fill="#1b2430">Gmail schránka fondu</text>
+  <text x="460" y="428" font-size="13" fill="#4b5565">jediná schránka, kterou aplikace čte</text>
+  <text x="460" y="456" font-size="14" fill="#1b2430">• sem chodí oznámení z banky</text>
+  <text x="460" y="478" font-size="14" fill="#1b2430">• odtud odcházejí e-maily s QR</text>
+  <text x="460" y="500" font-size="14" fill="#1b2430">• nic se nemaže, jen se označuje</text>
+
+  <!-- aktéři -->
+  <rect x="30" y="140" width="200" height="150" rx="12" fill="#eef2fa" stroke="#4b5565" stroke-width="1.5"/>
+  <text x="130" y="175" font-size="19" font-weight="700" fill="#1b2430" text-anchor="middle">Učitel /</text>
+  <text x="130" y="198" font-size="19" font-weight="700" fill="#1b2430" text-anchor="middle">třídní finančník</text>
+  <text x="130" y="228" font-size="13" fill="#4b5565" text-anchor="middle">mobil nebo počítač,</text>
+  <text x="130" y="246" font-size="13" fill="#4b5565" text-anchor="middle">webová stránka</text>
+  <text x="130" y="264" font-size="13" fill="#4b5565" text-anchor="middle">(přihlášení kódem z e-mailu)</text>
+
+  <rect x="30" y="360" width="200" height="140" rx="12" fill="#eef2fa" stroke="#4b5565" stroke-width="1.5"/>
+  <text x="130" y="388" font-size="19" font-weight="700" fill="#1b2430" text-anchor="middle">Rodič</text>
+  <text x="130" y="412" font-size="13" fill="#4b5565" text-anchor="middle">dostane e-mail s QR;</text>
+  <text x="130" y="430" font-size="13" fill="#4b5565" text-anchor="middle">přihlásí se vlastním Gmailem</text>
+  <text x="130" y="448" font-size="13" fill="#4b5565" text-anchor="middle">(propojení potvrdí dítě kódem)</text>
+  <text x="130" y="470" font-size="13" fill="#4b5565" text-anchor="middle">vidí jen platby svého dítěte</text>
+
+  <rect x="990" y="370" width="260" height="130" rx="12" fill="#eef2fa" stroke="#4b5565" stroke-width="1.5"/>
+  <text x="1120" y="405" font-size="19" font-weight="700" fill="#1b2430" text-anchor="middle">Banka</text>
+  <text x="1120" y="433" font-size="13" fill="#4b5565" text-anchor="middle">přijme platbu z QR kódu</text>
+  <text x="1120" y="451" font-size="13" fill="#4b5565" text-anchor="middle">a pošle e-mail o příchozí</text>
+  <text x="1120" y="469" font-size="13" fill="#4b5565" text-anchor="middle">platbě do schránky fondu</text>
+
+  <!-- šipky -->
+  <line x1="232" y1="190" x2="313" y2="190" stroke="#1f5fd1" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="313" y1="250" x2="232" y2="250" stroke="#1f5fd1" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="567" y1="237" x2="663" y2="237" stroke="#17803d" stroke-width="2.5" marker-end="url(#ah)" marker-start="url(#ah)"/>
+  <line x1="500" y1="378" x2="500" y2="327" stroke="#1f5fd1" stroke-width="2.5" marker-end="url(#ah)" marker-start="url(#ah)"/>
+  <line x1="438" y1="425" x2="232" y2="425" stroke="#1f5fd1" stroke-width="2.5" marker-end="url(#ah)"/>
+  <polyline points="130,502 130,568 1120,568 1120,502" fill="none" stroke="#4b5565" stroke-width="2.5" marker-end="url(#ahg)"/>
+  <line x1="988" y1="440" x2="782" y2="440" stroke="#1f5fd1" stroke-width="2.5" marker-end="url(#ah)"/>
+
+  <!-- čísla kroků -->
+  <g font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <circle cx="272" cy="175" r="13" fill="#1f5fd1"/><text x="272" y="180">1</text>
+    <circle cx="272" cy="268" r="13" fill="#1f5fd1"/><text x="272" y="273">6</text>
+    <circle cx="500" cy="352" r="13" fill="#1f5fd1" /><text x="500" y="357">5</text>
+    <circle cx="335" cy="410" r="13" fill="#1f5fd1"/><text x="335" y="415">2</text>
+    <circle cx="625" cy="568" r="13" fill="#4b5565"/><text x="625" y="573">3</text>
+    <circle cx="885" cy="425" r="13" fill="#1f5fd1"/><text x="885" y="430">4</text>
+  </g>
+
+  <!-- postup -->
+  <text x="965" y="132" font-size="16" font-weight="700" fill="#1b2430">Postup</text>
+  <g font-size="14" fill="#1b2430">
+    <text x="965" y="160"><tspan font-weight="700" fill="#1f5fd1">1</tspan>  Učitel založí sbírku a vybere žáky.</text>
+    <text x="965" y="189"><tspan font-weight="700" fill="#1f5fd1">2</tspan>  E-mail s QR kódem dostane žák, rodič,</text>
+    <text x="984" y="207">nebo oba (po náhledu a potvrzení).</text>
+    <text x="965" y="236"><tspan font-weight="700" fill="#4b5565">3</tspan>  Rodič zaplatí QR kódem v bance.</text>
+    <text x="965" y="265"><tspan font-weight="700" fill="#1f5fd1">4</tspan>  Banka pošle e-mail o příchozí platbě.</text>
+    <text x="965" y="294"><tspan font-weight="700" fill="#1f5fd1">5</tspan>  Aplikace e-mail přečte, ověří odesílatele</text>
+    <text x="984" y="312">a symboly a označí „zaplaceno“.</text>
+    <text x="965" y="341"><tspan font-weight="700" fill="#1f5fd1">6</tspan>  Učitel vidí, kdo zaplatil.</text>
+  </g>
+
+  <!-- zabezpečení -->
+  <rect x="30" y="600" width="1220" height="180" rx="14" fill="#f4fbf6" stroke="#17803d" stroke-width="1.5"/>
+  <text x="50" y="630" font-size="17" font-weight="700" fill="#17803d">Hlavní zabezpečení</text>
+  <g font-size="14" fill="#1b2430">
+    <g fill="#17803d" font-weight="700" font-size="16">
+      <text x="50" y="662">✓</text><text x="360" y="662">✓</text><text x="670" y="662">✓</text><text x="980" y="662">✓</text>
+      <text x="50" y="722">✓</text><text x="360" y="722">✓</text><text x="670" y="722">✓</text><text x="980" y="722">✓</text>
+    </g>
+    <text x="72" y="662">Přihlášení kódem z e-mailu,</text><text x="72" y="681">správce navíc heslo (zámek po 5 pokusech)</text>
+    <text x="382" y="662">Práva vynucuje server podle role,</text><text x="382" y="681">ne jen skrytá tlačítka</text>
+    <text x="692" y="662">E-maily rodičům se neodešlou bez</text><text x="692" y="681">náhledu a potvrzení</text>
+    <text x="1002" y="662">Mazání: náhled, potvrzení a vlastní</text><text x="1002" y="681">heslo; nejdřív se jen archivuje</text>
+    <text x="72" y="722">Falešný e-mail „z banky“ se nezapočítá</text><text x="72" y="741">(kontrola odesílatele a symbolů)</text>
+    <text x="382" y="722">Rodič: vlastní Gmail, propojení potvrdí</text><text x="382" y="741">dítě kódem; vidí jen platby svého dítěte</text>
+    <text x="692" y="722">Každá škola má vlastní kopii,</text><text x="692" y="741">autor k jejím datům nemá přístup</text>
+    <text x="1002" y="722">Vstupy se kontrolují (IBAN, částky),</text><text x="1002" y="741">do buněk se nedostanou vzorce</text>
+  </g>
+</svg>

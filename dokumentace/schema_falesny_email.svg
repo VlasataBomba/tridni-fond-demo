@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760" font-family="Liberation Sans, DejaVu Sans, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#17803d"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5565"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="760" fill="#ffffff"/>
+
+  <text x="30" y="46" font-size="30" font-weight="700" fill="#1b2430">Co když přijde falešný e-mail „z banky“?</text>
+  <text x="30" y="76" font-size="16" fill="#4b5565">Platba se zapíše jen tehdy, když projde všemi kontrolami. Každé odmítnutí se ukáže učiteli i s důvodem.</text>
+
+  <!-- falešný e-mail -->
+  <rect x="30" y="120" width="330" height="270" rx="12" fill="#fdf3f2" stroke="#b3261e" stroke-width="2"/>
+  <text x="50" y="150" font-size="17" font-weight="700" fill="#b3261e">Falešný e-mail (příklad)</text>
+  <rect x="50" y="165" width="290" height="205" rx="8" fill="#ffffff" stroke="#e3e6eb"/>
+  <g font-size="14" fill="#1b2430">
+    <text x="62" y="192"><tspan fill="#4b5565">Od:</tspan> info@airbank.cz.evil.example</text>
+    <text x="62" y="216"><tspan fill="#4b5565">Předmět:</tspan> Příchozí platba</text>
+    <text x="62" y="248">Zůstatek se zvýšil o částku 500 CZK.</text>
+    <text x="62" y="270">Variabilní symbol: 123456</text>
+    <text x="62" y="292">Specifický symbol: 17…</text>
+    <text x="62" y="320" fill="#b3261e" font-weight="700">Jen vypadá jako e-mail od banky.</text>
+    <text x="62" y="342" fill="#4b5565" font-size="13">Další pokusy: info@notairbank.cz,</text>
+    <text x="62" y="360" fill="#4b5565" font-size="13">jméno „airbank.cz“ od cizí adresy</text>
+  </g>
+
+  <!-- trubice kontrol -->
+  <g>
+    <!-- 1 -->
+    <rect x="440" y="110" width="520" height="80" rx="12" fill="#f5f8ff" stroke="#1f5fd1" stroke-width="2"/>
+    <circle cx="470" cy="150" r="14" fill="#1f5fd1"/><text x="470" y="155" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="496" y="142" font-size="16" font-weight="700" fill="#1b2430">Hledá se jen podle specifického symbolu sbírky</text>
+    <text x="496" y="164" font-size="14" fill="#4b5565">E-mail musí obsahovat symbol sbírky a nesmí být od nás.</text>
+    <!-- 2 -->
+    <rect x="440" y="215" width="520" height="95" rx="12" fill="#f5f8ff" stroke="#1f5fd1" stroke-width="2"/>
+    <circle cx="470" cy="262" r="14" fill="#1f5fd1"/><text x="470" y="267" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <text x="496" y="248" font-size="16" font-weight="700" fill="#1b2430">Odesílatel musí mít doménu banky</text>
+    <text x="496" y="270" font-size="14" fill="#4b5565">Přesně airbank.cz nebo její poddoménu (info.airbank.cz).</text>
+    <text x="496" y="291" font-size="14" fill="#4b5565">Text domény kdekoli jinde v adrese nebo jménu nestačí.</text>
+    <!-- 3 -->
+    <rect x="440" y="335" width="520" height="80" rx="12" fill="#f5f8ff" stroke="#1f5fd1" stroke-width="2"/>
+    <circle cx="470" cy="375" r="14" fill="#1f5fd1"/><text x="470" y="380" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <text x="496" y="367" font-size="16" font-weight="700" fill="#1b2430">Musí jít o příchozí platbu s částkou</text>
+    <text x="496" y="389" font-size="14" fill="#4b5565">Odchozí platby a „snížení zůstatku“ se zahodí.</text>
+    <!-- 4 -->
+    <rect x="440" y="440" width="520" height="80" rx="12" fill="#f5f8ff" stroke="#1f5fd1" stroke-width="2"/>
+    <circle cx="470" cy="480" r="14" fill="#1f5fd1"/><text x="470" y="485" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+    <text x="496" y="472" font-size="16" font-weight="700" fill="#1b2430">Variabilní symbol musí patřit žákovi ve sbírce</text>
+    <text x="496" y="494" font-size="14" fill="#4b5565">Jinak je platba „nespárovaná“ – nezapočítá se a učitel uvidí proč.</text>
+    <!-- 5 -->
+    <rect x="440" y="545" width="520" height="80" rx="12" fill="#f4fbf6" stroke="#17803d" stroke-width="2"/>
+    <circle cx="470" cy="585" r="14" fill="#17803d"/><text x="470" y="590" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+    <text x="496" y="577" font-size="16" font-weight="700" fill="#1b2430">Zapíše se „zaplaceno“ a uloží se důkaz</text>
+    <text x="496" y="599" font-size="14" fill="#4b5565">Do historie s odkazem na původní e-mail, který lze kdykoli otevřít.</text>
+  </g>
+
+  <!-- šipky dolů (prochází) -->
+  <g stroke="#17803d" stroke-width="2.5" fill="none" marker-end="url(#ad)">
+    <line x1="700" y1="190" x2="700" y2="213"/>
+    <line x1="700" y1="310" x2="700" y2="333"/>
+    <line x1="700" y1="415" x2="700" y2="438"/>
+    <line x1="700" y1="520" x2="700" y2="543"/>
+  </g>
+
+  <!-- zahozeno -->
+  <g font-size="14">
+    <line x1="962" y1="262" x2="1010" y2="262" stroke="#b3261e" stroke-width="2.5" marker-end="url(#ar)"/>
+    <rect x="1012" y="215" width="238" height="95" rx="10" fill="#fdf3f2" stroke="#b3261e" stroke-width="1.5"/>
+    <text x="1026" y="240" font-weight="700" fill="#b3261e">Zahozeno</text>
+    <text x="1026" y="260" fill="#1b2430">Po kontrole se v detailu ukáže:</text>
+    <text x="1026" y="280" fill="#1b2430">„e-mail neposlala banka“</text>
+    <text x="1026" y="298" fill="#4b5565" font-size="12">(s adresou odesílatele)</text>
+
+    <line x1="962" y1="375" x2="1010" y2="375" stroke="#b3261e" stroke-width="2.5" marker-end="url(#ar)"/>
+    <rect x="1012" y="340" width="238" height="70" rx="10" fill="#fdf3f2" stroke="#b3261e" stroke-width="1.5"/>
+    <text x="1026" y="365" font-weight="700" fill="#b3261e">Zahozeno</text>
+    <text x="1026" y="386" fill="#1b2430">nejde o příchozí platbu</text>
+
+    <line x1="962" y1="480" x2="1010" y2="480" stroke="#b3261e" stroke-width="2.5" marker-end="url(#ar)"/>
+    <rect x="1012" y="445" width="238" height="70" rx="10" fill="#fdf3f2" stroke="#b3261e" stroke-width="1.5"/>
+    <text x="1026" y="470" font-weight="700" fill="#b3261e">Nespárováno</text>
+    <text x="1026" y="491" fill="#1b2430">nezapočítá se, ukáže se učiteli</text>
+  </g>
+
+  <!-- spojení falešný e-mail -> kontrola 1 -->
+  <line x1="362" y1="250" x2="438" y2="150" stroke="#4b5565" stroke-width="2.5" marker-end="url(#ag)"/>
+
+  <!-- poctivá poznámka -->
+  <rect x="30" y="655" width="1220" height="85" rx="12" fill="#fff8e6" stroke="#96600a" stroke-width="1.5"/>
+  <text x="50" y="683" font-size="15" font-weight="700" fill="#96600a">Poctivě o hranicích</text>
+  <text x="50" y="707" font-size="14" fill="#1b2430">Aplikace neumí kryptograficky dokázat, že e-mail poslala banka. Doplňuje ochranu Gmailu, který sám ověřuje odesílatele (SPF/DKIM/DMARC),</text>
+  <text x="50" y="727" font-size="14" fill="#1b2430">a padělky obvykle míří do spamu. Aplikace je pomůcka pro přehled, ne účetnictví: pravdou o penězích zůstává bankovní výpis.</text>
+</svg>
