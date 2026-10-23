@@ -7063,6 +7063,22 @@ var Sheets = { Spreadsheets: { Values: { batchGet: function(id, opt) {
       (__sent.length ? __sent.slice().reverse().map(function (m) { return '<div style="border-top:1px solid #ddd;padding:6px 0"><b>Komu:</b> ' + esc(m.to) + '<br><b>Předmět:</b> ' + esc(m.subject) + '<pre style="white-space:pre-wrap;margin:4px 0 0;font:12px system-ui">' + esc(m.text) + "</pre></div>"; }).join("") : "<i>zatím nic</i>");
   }
   document.addEventListener("click", function (e) { if (e.target && e.target.id === "dm-btn") { var p = document.getElementById("dm-box"); p.hidden = !p.hidden; schranka(); } });
+  // V ukázce neexistuje žádná Tabulka ani Gmail: odkazy na ně by vedly na „Stránka nenalezena“, tak místo nich vysvětlíme, co by se otevřelo.
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null; if (!a) return;
+    var h = a.getAttribute("href") || "", tab = h.indexOf("https://docs.google.com/spreadsheets/") === 0, gm = h.indexOf("https://mail.google.com/") === 0;
+    if (!tab && !gm) return;
+    e.preventDefault(); e.stopPropagation();
+    var old = document.getElementById("dm-odkaz"); if (old) old.remove();
+    var o = document.createElement("div"); o.id = "dm-odkaz";
+    o.style.cssText = "position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;padding:16px;font:15px/1.5 system-ui,sans-serif";
+    o.innerHTML = '<div style="background:#fff;color:#111;border-radius:12px;max-width:440px;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.4)"><b>Tohle je jen ukázka.</b><p style="margin:8px 0 14px">' +
+      (tab ? "Žádná Tabulka Google tu neexistuje. Ve skutečné aplikaci se tady otevře Tabulka školy (list třídy se žáky a sbírkami), ve které jsou všechna data uložená."
+           : "Žádný Gmail tu neexistuje. Ve skutečné aplikaci se tady otevře původní e-mail z banky ve schránce fondu.") +
+      '</p><button type="button" style="padding:8px 16px;border-radius:8px;border:0;background:#2563eb;color:#fff;font:inherit;cursor:pointer">Zavřít</button></div>';
+    o.addEventListener("click", function (ev) { if (ev.target === o || ev.target.tagName === "BUTTON") o.remove(); });
+    document.body.appendChild(o);
+  }, true);
   window.__sent = __sent;
 })();
 
